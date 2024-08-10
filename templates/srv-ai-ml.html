@@ -1,0 +1,95 @@
+{% extends "base.html" %} {% block title %}AI/ML -BigCloudOps{% endblock %} {% block content%}
+<style>
+.srvaiml {
+    padding: 0px;
+    margin: 0px;
+    border: 1px;
+}
+h3 {
+  display: block;
+  font-size: 1.47em;
+  margin-top: 2.33em;
+  margin-left: .8em;
+  margin-right: 0;
+  font-weight: bold;
+  font-style: oblique;
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h4 {
+  display: block;
+  font-size: 1.27em;
+  margin-left: .8em;
+  margin-right: 1;
+  margin-top: .8em;
+  color: black;
+}
+.servcies-offered {
+  display: block;
+  font-size: 1.17em;
+  margin-left: 1.8em;
+  margin-bottom: 0.33em;
+  margin-right: 0;
+  font-style: oblique;
+  color: green;
+  font-family: Fantasy;
+}
+.img-aiml{
+    margin-right: 3.8em;
+}
+.img-tools{
+    margin-left: .8em;
+}
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px;
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>BigCloudOps</title>
+</head>
+<body>
+<div class="srvaiml">
+    <img src="{{ url_for('static', filename='services/srv-ai-ml.jpg') }}" class="img-aiml" width="1349px" height="390vh">
+</div>
+
+<div class="srvaiml-into">
+    <h3>Be futuristic, Let's help you to build business models algorithmically which will predict more accurately</h3>
+</div>
+
+<div class="float-container">
+    <div class="float-child green">
+        <h4>Services offered</h4>
+        <ul>
+        <li>Machine learning</li>
+        <li>AI based solutions</li>
+        <li>Natural Language processing</li>
+        <li>Deep learning</li>
+        <li>Chat bot development</li>
+        <li>Adaptive learning analytics</li>
+        <li>Data Analytics Application Development Services</li>
+        <li>Prescriptive Data Solutions</li>
+        <li>Business Intelligence services</li>
+        </ul>
+    </div>
+    <div class="float-child blue">
+        <h5>Tools & Techonologies</h5>
+        <img src="{{ url_for('static', filename='services/srv-ai-ml-tools.png') }}" class="img-tools" width="549px" height="390vh"></img>
+    </div>
+</div>
+<br />
+<div class="connectwithus">
+    <a href="/contact-us"><button type="button" class="btn btn-info" value="Reset">Connect with Us</button></a>
+</div>
+<br />
+</body>
+{% endblock %}

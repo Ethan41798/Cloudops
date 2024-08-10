@@ -1,0 +1,136 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
+
+<div class="img-head">
+<h1> What is DATA ENGINEERING? </h1>
+</div>
+
+<div class="intro-row">
+  <div class="leftcolumn">
+    <div class="card">
+          <p> Today’s world lies in data. Data is more valuable and much needed. Start from e-commerce to tiny applications every thing is associated with data. Adding shape to the unstructured data and managing the same will be  quite challenging. </p>
+
+   <p> When we have something to read in-front of us which is complex and un-ordered format is it look good to go?
+Not yet all. Exactly when it comes to data which is in raw and different forms need to transform and load properly by the time it reaches to data scientists. </p>
+      <div class ="img-wrapper">
+                    <a href="">
+                        <img src="{{ url_for('static', filename='datascience/data.png') }}"
+                             class="img-responsive" width="600" height="500" alt="">
+                    </a>
+                </div>
+
+        <h1> Data Engineering Services </h1>
+
+        <h2>Data Architecture</h2>
+      <p>
+       We help you build data lake architectures that can enable migration of your data from existing databases to new databases. We offer all cloud migration including snowflake.We ensure the quality of data and also keep it secure and accessible.
+    </p>
+<div class ="img-wrapper">
+                    <a href="">
+                        <img src="{{ url_for('static', filename='datascience/architechture.png') }}"
+                             class="img-responsive" width="600" height="500" alt="">
+                    </a>
+                </div>
+        <h2> Data Ingestion </h2>
+<p>
+    Big cloud provides business critical and as-usual solutions. It ensures enterprises critical data management, processing, organisational, and storage concerns.
+</p>
+        <div class ="img-wrapper">
+                    <a href="">
+                        <img src="{{ url_for('static', filename='datascience/data_ingestion.png') }}"
+                             class="img-responsive"width="600" height="500" alt="">
+                    </a>
+                </div>
+
+   <h2> Data Governance </h2>
+<p>
+    Our data practises ensure data quality at topnotch with high security. We perform frequent health check and regular backups to ensure no data breach.
+</p>
+
+        <div class ="img-wrapper">
+                    <a href="">
+                        <img src="{{ url_for('static', filename='datascience/data_governance.png') }}"
+                             class="img-responsive" width="600" height="500" alt="">
+                    </a>
+                </div>
+
+
+
+        <h3> Data Warehousing </h3>
+<p>
+    Data integration from various resources and reframe into the data warehouses. We deal with complexities data warehousing.
+</p>
+        <div class ="img-wrapper">
+                    <a href="">
+                        <img src="{{ url_for('static', filename='datascience/data_warehousing.png') }}"
+                             class="img-responsive" width="600" height="500" alt="">
+                    </a>
+                </div>
+
+        <h2> Data migration </h2>
+<p>
+    we offer various data migration policies to organisations to help in 	their migration projects. ETL tools used to make ease the process and simpler. Strategic solutions provided to avoid the conflicts.
+</p>
+
+        <div class ="img-wrapper">
+                    <a href="">
+                        <img src="{{ url_for('static', filename='datascience/data_migration.png') }}"
+                             class="img-responsive" width="600" height="500" alt="">
+                    </a>
+                </div>
+
+        <h2> Automation driven solution for data services </h2>
+<p>
+    Big cloud-ops offers automated solutions to regular data services and product based solutions depends on requirements. Offers IAC enabled solutions to make ease of complex operations
+</p>
+
+        <div class ="img-wrapper">
+                    <a href="">
+                        <img src="{{ url_for('static', filename='datascience/Data_automation.png') }}"
+                             class="img-responsive" width="600" height="500" alt="">
+                    </a>
+                </div>
+
+
+
+</div>
+
+<style>
+
+/* Header/Blog Title */
+.img-head {
+  padding: 20px;
+  font-size: 40px;
+  text-align: left;
+  background: white;
+}
+
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.intro-row:after {
+  content: "";
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+
+{% endblock %}

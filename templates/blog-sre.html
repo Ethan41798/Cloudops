@@ -1,0 +1,131 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
+<div class="img-head">
+  <h1><img src="{{ url_for('static', filename='sre/SRE.jpg') }}" class="img-responsive" style="float: left" width="225" height="170" alt="">Site Reliability Engineering </h1>
+
+</div>
+
+<div class="intro-row">
+  <div class="leftcolumn">
+    <div class="card">
+        <p>
+Site Reliability Engineering (SRE) is a collection of practices, tools, and cultural philosophies that aims to improve the reliability of your services. Reliability is defined as a subjective metric, reflecting not just the availability of services, but how important they are to users. As such, SRE is focused on aligning development and operations teams on improving customer happiness.
+</p>
+      <h2>What is Site Reliability Engineering?</h2>
+      <p>
+          Site Reliability Engineering (SRE) ensures software engineering as an error-free IT process, by applying software engineering approaches and automation solutions to system administration topics. SRE uses software programs as a tool to regulate systems, troubleshoot issues, and automate the operational process
+      </p>
+
+        <h2>SRE vs DevOps</h2>
+        <p>
+            SRE and DevOps share many of the same goals. They mostly differ in how they recommend these goals are met. However, this doesn’t make them incompatible. SRE can be thought of as a method to implement the principles of DevOps. If you’ve implemented DevOps, you’re in a great position to bridge the gap to SRE.Each SRE practice you add will be bolstered by the DevOps structures you’ve already built.
+        </p>
+
+        <h2>SRE Goals are: </h2>
+        <div class ="img-wrapper">
+                    <a href="">
+                        <img src="{{ url_for('static', filename='sre/Goals.png') }}"
+                             class="img-responsive" alt="">
+                    </a>
+                </div>
+        <ul>
+  <li>Monitor and improve the reliability of systems</li>
+  <li>Anticipate failures and Solve them</li>
+  <li>Automate Operation tasks</li>
+<li> Speed and Performance</li>
+</ul>
+<h2>Best Practices for Site Reliability Engineering.</h2>
+        <div class ="img-wrapper">
+                    <a href="">
+                        <img src="{{ url_for('static', filename='sre/bestpractice.png') }}"
+                             class="img-responsive" alt="">
+                    </a>
+                </div>
+        <h2>Practices and requirements: </h2>
+        <p>
+A set of operational reliability and performance standards should be developed and promoted by the SRE team. The amount of hard work and repetitive occurrences are reduced, and the customer experience improves dramatically when everyone in the company adopts them.
+        </p>
+        <h2>SRE Tiers service:</h2>
+        <p>
+Sometimes it is hard to decide when there are multiple development teams, applications, or infrastructures to support, and the depth of involvement shown by the SRE teams. It is unrealistic to be an expert in everything, but a person can be 100% productive by putting in 40 hours per week. The individual should be capable of quickly responding to questions and resolving the problem.
+        </p>
+        <h2>Monitoring: </h2>
+        <p>
+The SRE team must understand their systems in and out to identify the performance faults and guarantee uptime. The maximum system performance can be achieved with continuous monitoring. This comprises providing a service, meeting set goals, and understanding what happens when a change is made.
+        </p>
+        <h2>Bring Automation: </h2>
+        <p>
+The companies must adopt a process of quickly delivering the products with quality. As a result, speed and accuracy work together to make a system reliable and most businesses seek to make their systems as reliable as possible without slowing down their process. This saves time by eliminating time-consuming and repetitive tasks, which can be used to automate the process.
+        </p>
+        <h2>Toil Management: </h2>
+        <p>
+When it comes to engineering time, toil is the most significant drawback; it is a waste of valuable time. In the beginning, having very few modules to configure with a minimal setup could seem convenient. As the project grows, the number of modules grows, making it more difficult to manage the process setup and configurations. Spending some time on creating a framework that can execute multiple functions and implementing automation can significantly reduce the developer’s workload.
+        </p>
+
+        <h2>Benefits of Site Reliability Engineering:</h2>
+        <div class ="img-wrapper">
+                    <a href="">
+                        <img src="{{ url_for('static', filename='sre/Benifits.png') }}"
+                             class="img-responsive" alt="">
+                    </a>
+                </div>
+        <h2>Reduce product and service downtime: </h2>
+        <p>
+You will need SRE knowledge to keep your products and services working as smoothly as possible. We all know that supporting continuous integration and testing by the operations team helps to reduce downtime. They make sure that the most services are available along with increased revenue
+   </p>
+         <h2>Bridges the gaps between platform design, development, and operational execution. </h2>
+        <p>
+By delivering unique insights into system dependability, site reliability engineering fills a gap in platform design, development, and operational execution
+   </p>
+         <h2>Increased security and compliance </h2>
+        <p>
+Site Reliability Engineering is concerned with security. It has become even more important than reliability, scalability, efficiency, and performance of services whenever there has been a specific breach.
+   </p>
+         <h2>Automation for human error optimisation </h2>
+        <p>
+Organisations must investigate all options for reducing downtime, particularly more than 22% are linked to human errors. As a result, disruptions can be greatly reduced by automating IT tasks such as monitoring. Automation is an important part of SRE because it improves the dependability, resilience, and precision of operations by automating manual, repetitive, and redundant procedures.
+   </p>
+         <h2>Understanding the process end-to-end emphasising outcomes </h2>
+        <p>
+The concept of a site reliability engineer is significant in the DevOps framework as another approach to connect Ops and Dev. SREs define a role whose major purpose is to connect people and streamline processes. Increasing reliability necessitates a reduction in complexity across a variety of operations.
+   </p>
+         <h2>Creates observability into service health</h2>
+        <p>
+The team ensures that the observability is already in place when the incident occurs, allowing the call responders to locate the required context which enables them to resolve issues more quickly
+   </p>
+
+</div>
+</div>
+</div>
+<style>
+
+/* Header/Blog Title */
+.img-head {
+  padding: 45px;
+  font-size: 40px;
+  text-align: left;
+  background: white;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.intro-row:after {
+  content: "";
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+
+<br />
+{% endblock %}

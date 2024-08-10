@@ -1,0 +1,83 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
+    <body>
+        <div>
+            <img src="{{ url_for('static', filename='automation/automation1.png') }}" width="1200" height="400">
+        </div>
+    </body>
+    <h3></h3>
+<p> In this digital Era there isn't anything which can not be automated! Automation driven technologies help businesses in process automation and in transforming digitally.Which helps in fast phase deliveries,scale up of revenues.</p>
+      <h2>What is Process Automation?</h2>
+        <div class ="img-wrapper">
+            <img src="{{ url_for('static', filename='automation/automation2.png') }}" class="img-responsive" width="1300" height="400" style="float: left">
+        </div>
+      <p>
+          It is the technology-enabled automation of complex business processes. Automate your workflows, manually generated series of automated steps to perform a typically human-performed task.
+      </p>
+
+        <h2>Why choose to Automate tasks?</h2>
+        <p>
+            Automation of complex business processes in turn helps to remove bottlenecks, reduce errors and loss of data, all while increasing transparency, communication across departments, and speed of processing.
+        </p>
+        <p>
+            Automation of tasks helps you in saving the time and can in turn help teams in utilising time on other important aspects of business.
+        </p>
+        <p>
+            Helps in error minimisation which usually occurs in the human intervention process.
+        </p>
+        <p>
+            Reduces the cost of labor, increases the business resilience.
+        </p>
+
+        <h2>Benefits of Process Automation </h2>
+        <div class ="img-wrapper">
+                    <a href="">
+                        <img src="{{ url_for('static', filename='automation/automation3.png') }}"
+                             class="img-responsive" width="1200" height="400" alt="">
+                    </a>
+        </div>
+<h2>Why BigcloudOps?</h2>
+        <p>
+With our skilled expertise we have developed and implemented methodologies that have accelerated the companies to run the business with ease.Help you to Boost up revenues and reduce capital & operational costs.
+        </p>
+        <p>
+        We help in your transformation process, to narrow down the total cost ownership and also to accelerate your time to value.
+        </p>
+
+<style>
+
+/* Header/Blog Title */
+.img-head {
+  padding: 45px;
+  font-size: 40px;
+  text-align: left;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 10%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Clear floats after the columns */
+.intro-row:after {
+  content: "";
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+{% endblock %}

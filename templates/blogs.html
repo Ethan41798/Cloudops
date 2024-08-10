@@ -1,0 +1,83 @@
+{% extends "base.html" %} {% block title %}BigCloudOps- Blogs{% endblock %} {% block content%}
+<div class="wrapp">
+    <div class="tile">
+        <img src="{{ url_for('static', filename='icons/cloud-services.png') }}">
+        <div class="text">
+            <h1>Cloud Managed Services</h1>
+<!--            <h2 class="animate-text"></h2>-->
+            <p class="animate-text">Cloud is one of the most significant areas of tech spend across industries. Yet capturing real-time values and transformation into cloud remains challenging.</p>
+            <a href="/blogs/cloudservices">
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="tile">
+        <img src="{{ url_for('static', filename='icons/Business-process-automation.jpg') }}">
+        <div class="text">
+            <h1>Process Automation</h1>
+<!--            <h2 class="animate-text"></h2>-->
+            <p class="animate-text">It is the technology-enabled automation of complex business processes. Automate your workflows, manually generated series of automated steps to perform a typically human-performed task.</p>
+            <a href="/blogs/automation">
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </div>
+     </div>
+
+    <div class="tile">
+        <img src="{{ url_for('static', filename='icons/icon-big-data.png') }}">
+       <div class="text">
+            <h1>Big Data</h1>
+            <h2 class="animate-text"></h2>
+            <p class="animate-text">Today’s world lies in data. Data is more valuable and much needed.</p>
+            <a href="/blogs/data">
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="tile">
+        <img src="{{ url_for('static', filename='icons/icon-devsecops.png') }}">
+        <div class="text">
+            <h1>DevSecOps</h1>
+            <p class="animate-text">DevOps is a set of practices, tools, and a cultural philosophy that integrate and automate the processes between Software Development and IT Operations.</p>
+            <a href="/blogs/devsecops">
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="tile">
+        <img src="{{ url_for('static', filename='icons/icon-sre.png') }}">
+        <div class="text">
+            <h1>SRE</h1>
+            <p class="animate-text">SRE is a collection of practices, tools, and cultural philosophies that aims to improve the reliability of your services. Reliability is defined as a subjective metric, reflecting not just the availability of services, but how important they are to users. As such, SRE is focused on aligning development and operations teams on improving customer happiness.</p>
+            <a href="/blogs/sre">
+                <div class="dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>
+<br />
+{% endblock %}

@@ -1,0 +1,131 @@
+{% extends "base.html" %} {% block title %}DevSecOps{% endblock %} {% block content%}
+    <body>
+        <div>
+            <img width="800" height="400"  src="{{ url_for('static', filename='devsecops/devops.png') }}">
+            <h3>Creating the blog for DevSecOps</h3>
+        </div>
+    </body>
+<p> Elevate your product quality with faster deployments, swift innovation cycles and
+by eliminating the communication silos. All this can be achieved when you incorporate the DevOps.</p>
+<h1> What DevOps is? </h1>
+
+<p> DevOps is a set of practices, tools, and a cultural philosophy that integrate and
+automate the processes between Software Development and IT Operations.
+Shortens the system development life cycle and provides continuous delivery with high software quality. </p>
+<h2> DevOps practices </h2>
+<div>
+    <h3> Continuous integration </h3>
+    <p>
+        It's the practice of automating the integration of code changes into a software
+        project. It allows developers to frequently merge code changes into a central
+        repository where builds and tests are executed. This helps DevOps teams address
+        bugs quicker, improve software quality, and reduce the time it takes to validate and
+        release new software updates.
+    </p>
+    <h3> Continuous delivery </h3>
+    <p>
+        This expands upon continuous integration by automatically deploying code
+    changes to respective environments. It follows a continuous delivery pipeline,
+    where automated builds, tests, and deployments are orchestrated as one release
+    workflow.
+    </p>
+    <h3>  Automation </h3>
+    <p>
+        Enable teams to move more quickly through the process of developing and
+        deploying high-quality software. Automation can trigger a build, test, and
+        deployment process that significantly reduces the time these steps take when done
+        manually.
+    </p>
+    <h3> Microservices </h3>
+    <p>
+        Here an application is built as a collection of smaller services that can be operated
+        and deployed independently. Every service has its own processes and
+        communicates with other services through an interface.
+    </p>
+    <h3> Monitoring </h3>
+    <p>
+        To monitor the entire lifecycle from planning, development, integration and
+        testing, deployment, and operations. This will allow teams to respond quickly and
+        automatically to any degradation in the customer experience.
+    </p>
+    <h3> Concept of IaC where everything is code </h3>
+    <body>
+        <div>
+            <img width="800" height="500"  src="{{ url_for('static', filename='devsecops/IAC.png') }}">
+        </div>
+    </body>
+    <p>
+        Infrastructure as Code (IaC) is the managing and provisioning of infrastructure through code instead of through manual processes.Codifying your infrastructure gives you a template to follow for provisioning.
+        IaC goes beyond simply scripting infrastructure configuration to treating your infrastructure definitions as actual code: using source control, code reviews, tests.
+    </p>
+</div>
+<h2> DevSecOps </h2>
+<p>
+    Security is ever mutating risk in any Organization and the most critical phase to be
+    focused on as well.Look at DevOps with a focus on secure design, development
+    and delivery.When we induce Security into the DevOps practices we have the
+    DevSecOps.
+</p>
+<p>
+    DevSecOps represents a natural and necessary evolution in the way organizations
+    approach security.Automated security testing built into the developer workflow to
+    solve it in chunks rather than making it a separate step.This, in turn, enhances
+    availability, reduces the possibility of data breaches, and ensures the development
+    and provisioning of powerful technology to meet business needs.
+</p>
+<h2> Here is how we keep DevSecOps in Practice </h2>
+<p>
+    Pre-Commit Hooks
+<p>
+    Source Composition Analysis
+<p>
+    Static App Security Testing
+<p>
+    Dynamic App Security Testing
+<p>
+    Security in Infrastructure as Code
+<p>
+    Secret Management
+</p>
+
+<h2> Benefits of DevOps </h2>
+
+<h4> Entire Business Optimization </h4>
+    <body>
+        <div>
+            <img width="600" height="500"  src="{{ url_for('static', filename='devsecops/Businessplan.png') }}">
+        </div>
+    </body>
+<h4> Continuous  Improvement </h4>
+    <body>
+        <div>
+            <img width="600" height="500" src="{{ url_for('static', filename='devsecops/GrowthHubv1.png') }}">
+        </div>
+    </body>
+<h4> Cost Reduction and Speed Delivery </h4>
+    <body>
+        <div>
+            <img width="600" height="500" src="{{ url_for('static', filename='devsecops/reduction.jpg') }}">
+        </div>
+    </body>
+<h4> Customer Satisfaction </h4>
+    <body>
+        <div>
+            <img width="600" height="500" src="{{ url_for('static', filename='devsecops/Happy.jpg') }}">
+        </div>
+    </body>
+<h4> Adjust to changing markets and trends </h4>
+    <body>
+        <div>
+            <img width="600" height="500" src="{{ url_for('static', filename='devsecops/trends.jpg') }}">
+        </div>
+    </body>
+<h4> Security by integrating it into devops pipeline of CI/CD, DevSecOps </h4>
+    <body>
+        <div>
+            <img width="600" height="500" src="{{ url_for('static', filename='devsecops/iam.png') }}">
+        </div>
+    </body>
+<br />
+{% endblock %}
+

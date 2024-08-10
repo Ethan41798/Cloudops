@@ -1,0 +1,85 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
+<body>
+    <div class="container-fluid p-0">
+        <div class="site-slider">
+            <div class="slider-one">
+                <div>
+                    <img src="{{ url_for('static', filename='digital_transformation.jpeg') }}" class="img-fluid">
+                    <div class="centered">Integrate your Business with Technology and Transform your Services</div>
+                </div>
+                <div>
+                    <img src="{{ url_for('static', filename='WhatisBigData.jpg') }}" class="img-fluid">
+                </div>
+                <div>
+                    <img src="{{ url_for('static', filename='hands_digital_transformation_shutterstock.jpg') }}" class="img-fluid">
+                </div>
+            </div>
+            <div class="slider-btn">
+                <span class="prev position-top"><i class="fas fa-chevron-left"></i></span>
+                <span class="next position-top right-0"><i class="fas fa-chevron-right"></i></span>
+            </div>
+        </div>
+    </div>
+
+<!--about us-->
+    <div class="big-about">
+        <div class="big-about-text">
+            <h2>What we do</h2>
+            <h5>We make you future ready with the advanced technologies by transforming your business to achieve customer excellence that you always wished for and in digital transformation augmented with automation by our tech experts.</h5>
+        </div>
+        <div class="big-about-img">
+            <img src="{{ url_for('static', filename='transparent-logo.png') }}" class="img-about">
+        </div>
+    </div>
+
+<!--    Our services-->
+    <div class="container">
+        <div class="servicesoffer">
+            <h3 align="justify">Services</h3>
+        </div>
+<!--        <h4>We build products and deliver services, manage advanced services hosted across public,private and hybrid clouds</h4>-->
+        <div class="box-container">
+<!--            <div class="offer" id="offerservices">-->
+<!--            </div>-->
+<!--            <div class="offer">-->
+<!--                <h3 class="heading">Offer</h3>-->
+<!--            </div>-->
+            <div class="box">
+                <img src="{{ url_for('static', filename='AIML.PNG') }}" alt="">
+                <h6></h6>
+                <a href="/services/ai-ml" class="btn">AI/ML</a>
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Bigdata.PNG') }}" alt="">
+                <h6></h6>
+                <a href="/services/bigdata"  class="btn">BIG DATA</a>
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Devsecops.png') }}" alt="">
+                <h6></h6>
+                <a href="/services/devsecops" class="btn">DevSecOps</a>
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='SRE.PNG') }}" alt="">
+                <h6></h6>
+                <a href="/services/sre" class="btn">SRE</a>
+            </div>
+
+            <div class="box">
+                <img src="{{ url_for('static', filename='Process Automation.png') }}" alt="">
+                <h6></h6>
+                <a href="/services/automation" class="btn">Process Automation</a>
+            </div>
+            <div class="box">
+                <img src="{{ url_for('static', filename='Cloud managed services.png') }}" alt="">
+                <h6></h6>
+                <a href="/services/cloud-services" class="btn">Cloud Managed Services</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+{% endblock %}

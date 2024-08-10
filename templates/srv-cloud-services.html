@@ -1,0 +1,78 @@
+{% extends "base.html" %} {% block title %}CloudServices -BigCloudOps{% endblock %} {% block content%}
+<style>
+h3 {
+  display: block;
+  font-size: 1.47em;
+  margin-top: 2.33em;
+  margin-left: .8em;
+  margin-right: 0;
+  font-weight: bold;
+  font-style: oblique;
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h4 {
+  display: block;
+  font-size: 1.27em;
+  margin-left: .8em;
+  margin-right: 1;
+  margin-top: .8em;
+  color: black;
+}
+.servcies-offered {
+  display: block;
+  font-size: 1.17em;
+  margin-left: 1.8em;
+  margin-bottom: 0.33em;
+  margin-right: 0;
+  font-style: oblique;
+  color: green;
+  font-family: Fantasy;
+}
+.img-bigdata{
+    margin-left: 15.2em;
+}
+.img-tools{
+    margin-right: 3.8em;
+}
+.float-container {
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px;
+}
+
+</style>
+
+<div class="srvbigdata">
+    <img src="{{ url_for('static', filename='services/cloud-cycle.png') }}" class="img-bigdata" width="800px" height="390vh">
+</div>
+
+<div class="srvdevsecops-intro">
+    <h3>Managed cloud services offer partial/complete management of a client’s cloud resources/infrastructure. With cloud managed services an organization can ensure all its cloud resources are running</h3>
+</div>
+
+<div class="float-container">
+    <div class="float-child green">
+        <h4>Services offered</h4>
+        <ul>
+        <li>Cloud Configuration, maintenance</li>
+        <li>Cloud security, Migration, Optimization</li>
+        </ul>
+    </div>
+    <div class="float-child blue">
+        <img src="{{ url_for('static', filename='services/cloud.png') }}" class="img-tools" width="702px" height="390vh"></img>
+    </div>
+</div>
+<br />
+<div class="connectwithus">
+    <a href="/contact-us"><button type="button" class="btn btn-info" value="Reset">Connect with Us</button></a>
+</div>
+<br />
+
+{% endblock %}
